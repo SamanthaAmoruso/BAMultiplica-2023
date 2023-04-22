@@ -1,0 +1,269 @@
+/* Colores: 
+
+    amarillo: #FFD700
+    amarillo podrido: #a19446 // color del menu de arriba
+    rojo podrido: #993c3c
+    naranja: #ff9900
+    rojo: #ff0000
+*/
+
+@font-face {
+    font-family: letrapiojosa; 
+    src: url(/images/Los_Piojos.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75));
+
+}
+  
+/* parte de la barra*/
+nav {
+    font-weight: bold;
+    background-color: #a19446;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: background-color 0.5s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+ 
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+  
+nav li {
+    float: left;
+}
+  
+nav a {
+    display: block;
+    color: #070707;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav a:hover {
+    background-color: #111;
+    color: rgb(255, 255, 255);
+    padding: 19px 16px;
+}
+  
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* fondo del menu de producto 1 y 2 cuando NO esta el mouse arriba*/
+.dropdown-menu {
+    display:none;
+    position: fixed;
+    background-color: #faf8f8;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(119, 38, 38, 0.911);
+}
+  
+/* este es el menu de producto 1 y 2*/
+.dropdown-menu li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    z-index: 1;
+    position:relative;
+    padding: 12px 15px;
+}
+  
+/* fondo del menu de producto 1 y 2 cuando esta el mouse arriba*/
+.dropdown-menu li a:hover {
+    background-color: #993c3c;
+    padding: 12px 30px;
+}
+  
+/* esto hace la flecha*/ 
+.arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ad3737;
+    position: relative;
+    top: -4px;
+    left: 14%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease-in-out;
+}
+  
+.dropdown:hover .arrow-down {
+    transform: translateX(-50%) rotate(180deg);
+}
+  
+/* contenido de la primer parte de ciro (biografia)*/
+.content {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #a19446;
+    border: 5px solid #ff0000;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: letrapiojosa; 
+    padding-top: 130px;
+    text-align: center;
+}
+
+.navbar-center {
+    font-size: 18px;
+    float: right;
+    text-align: center;
+    width: 55%; /* Ancho del centro */
+}
+
+.navbar-right {
+    float: right;
+    font-family: letrapiojosa; 
+    font-size: 24px;
+}
+
+.navbar-right a:hover{
+    background-color: transparent;
+    padding: 14px 16px;
+    color: rgb(10, 10, 10);
+    cursor: default;
+}
+
+
+.navbar nav a:hover {
+    background-color: transparent;
+}
+
+.navbar-left{
+    float: left;
+    padding: 0px 0px;
+    font-size: 0px;
+}
+
+/* Borde y efecto de portadas de albums */
+.border {
+    border: 3px solid rgb(245, 31, 16);
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+
+}
+
+/* el efecto de que se agrandan los albumes*/ 
+.border:hover{
+    transform: scale3d(1.4, 1.4, 0.3);
+    -webkit-transform: scale3d(1.5, 1.5, 0.3);
+    -moz-transform: scale3d(1.5, 1.5, 0.3);
+}
+
+#albumes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+#albumes a {
+    flex: 0 0 50%;
+    margin: 70px;
+    line-height: 20vh; /* Establece un espacio vertical de 10 píxeles después de cada párrafo (espacios abajo)*/
+}
+
+#albumes iframe {
+    width: 50%;
+    height: 0;
+    padding-bottom: 70%;
+    border-radius: 12px;
+}
+
+h2{
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: letrapiojosa; 
+    line-height: 20vh;
+}
+
+.imagen-uno{
+    border-radius: 30px 30px 30px 30px;
+}
+
+footer .copyright {
+    font-size: 15px;
+    margin: 25px 0 0;
+    text-align: center;
+}
+
+h3{
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: letrapiojosa; 
+    line-height: 20vh;
+}
+
+.sub-videito{
+    text-align: -webkit-center;
+}
+
+.primerParrafo{
+    display: flex;
+    align-items: center;
+}
+
+.primerParrafo img{
+    margin-right: 20px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+h4{
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 20vh;
+}
+
+.copyright
+{
+    width: 100%;
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    padding: 2rem 8%;
+    background: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    flex-direction: column;
+}
+
+.redesSociales ul{
+    display: flex;
+    width: 96%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}

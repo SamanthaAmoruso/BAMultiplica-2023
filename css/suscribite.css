@@ -1,0 +1,105 @@
+/*Colores:
+
+    rojo apagado mas claro: #993c3c
+    rojo apagado: #4d1d1d
+    amarillo podrido: a19446
+    gris triste: #313131 // del texto (label)
+
+*/
+
+body{
+    background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75));
+}
+
+form {
+    max-width: 90vh;
+    margin: 0 auto;
+    background-color: #a19446;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    font-family: Arial, sans-serif;
+}
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+  
+.form-group {
+    margin-bottom: 20px;
+}
+
+.puntitos{
+    display: flex;
+    justify-content: space-between;
+}
+  
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #313131;
+    
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+  
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+  
+button[type="submit"] {
+    display: block;
+    margin-top: 30px;
+    background-color: #993c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+button[type="submit"]:hover {
+    background-color: #4d1d1d;
+}
+
+.arrepentimiento{
+    display: block;
+    margin-top: 30px;
+    background-color: #993c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.arrepentimiento:hover{
+    background-color: #4d1d1d;
+}
+
+.botoncitos{
+    display: flex;
+    justify-content: space-between;
+}
+
+input:invalid {
+    border: 2px solid red;
+}

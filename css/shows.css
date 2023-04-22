@@ -1,0 +1,89 @@
+body{
+    background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75));
+    max-width: 130vh;
+    margin: 0 auto;
+}
+
+.pClass {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.orden {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.contenedorCircular {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: block;    
+}
+
+.fondo {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    border: 1px solid rgb(235, 238, 241);
+    border-radius: 72px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 250ms ease 0s, -webkit-transform 150ms ease 0s, -webkit-backdrop-filter 150ms ease 0s; 
+}
+
+.ancho {
+    margin: 20px auto;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.letraCentrada {
+    display: flex;
+}
+
+.fondo:hover{
+    background-color: #993c3c;   
+}
+ 
+.madre{ /* tinte del cuadrito*/
+    border-radius: 20px;
+    background-color: #a19446;
+    max-width: 130vh;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+button[type="submit"] 
+{
+    display: block;
+    margin-top: 30px;
+    background-color: #993c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+button[type="submit"]:hover 
+{
+    background-color: #4d1d1d;
+}
+
+.botoncitos{
+    display: flex;
+    justify-content: center;
+}
