@@ -13,6 +13,6 @@ function validarFormulario(event)
 
 function arrepentirse() 
 {
-  alert("Formulario NO enviado correctamente");
+  alert("Usted volvera a la pagina principal sin haberse suscripto");
   window.location.href = "/index.html";
 }
