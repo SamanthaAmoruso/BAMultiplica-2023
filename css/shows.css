@@ -46,7 +46,7 @@ body{
     background-color: #993c3c;   
 }
  
-.madre{ /* tinte del cuadrito*/
+#madre{ /* tinte del cuadrito*/
     border-radius: 20px;
     background-color: #a19446;
     max-width: 130vh;
