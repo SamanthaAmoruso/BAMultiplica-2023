@@ -1,4 +1,5 @@
 const infoDivs = [
+    {id: 'idceroDiv', url: 'https://www.ticketek.com.ar/ciro-y-los-persas/estadio-velez-sarsfield', texto: '🎫 9 DE SEPTIEMBRE - VELEZ'},
     {id: 'idprimerDiv', url: 'https://www.ticketek.com.ar/ciro-y-los-persas/teatro-el-circulo', texto: '🎫 4 DE MAYO - ROSARIO - SINFONICO'},
     {id: 'idsegundoDiv', url: 'https://www.ticketek.com.ar/ciro-y-los-persas/anfiteatro-municipal', texto: '🎫 6 DE MAYO - ROSARIO'},
     {id: 'idtercerDiv', url: 'https://www.entradaweb.com.ar/index.php?r=site/detalles&d=88d99135', texto: '🎫 7 DE JUNIO - MENDOZA - SINFONICO'},
@@ -32,7 +33,7 @@ for (let i = 0; i < infoDivs.length; i++)
     window.open(infoDivs[i].url, '_blank');
   };
 
-  if (i === 6) 
+  if (i === 7) 
   {
     contenedor.insertBefore(titulo, div[i]);
   }

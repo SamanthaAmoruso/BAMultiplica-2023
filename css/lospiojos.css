@@ -84,12 +84,12 @@ nav a:hover {
     position:relative;
     padding: 12px 15px;
 }
-  
+
 /* fondo del menu de producto 1 y 2 cuando esta el mouse arriba*/
 .dropdown-menu li a:hover {
-    background-color: #993c3c;
-    padding: 12px 30px;
-
+    background-color: transparent;
+    text-decoration: underline;
+    color: #ad3737;
 }
   
 /* esto hace la flecha*/ 
@@ -259,8 +259,6 @@ video {
     display: block;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
     padding: 10px;
-    animation: bounce 0.5s ease-in-out;
-    
 }
 
 @keyframes bounce 
@@ -268,4 +266,21 @@ video {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
+}
+
+.ir-arriba {
+    display:none;
+    padding:7px;
+    background:#993c3c;
+    font-size:20px;
+    color:white;
+    cursor:pointer;
+    position: fixed;
+    bottom:15px;
+    right:25px;
+    z-index: 3;
+}
+
+.ir-arriba:hover{
+    background-color: #4d1d1d;
 }
