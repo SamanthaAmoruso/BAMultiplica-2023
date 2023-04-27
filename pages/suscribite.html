@@ -10,31 +10,31 @@
     </head>
 
     <body>
-        <form onsubmit="return validarFormulario(event)">
+        <form id="miFormulario" onsubmit="return validarFormulario(event)">
             <h1>Suscribite para mas novedades de Ciro y los Persas</h1>
 
             <div class="formm">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required pattern="^[a-zA-ZñÑ ]+$" title="Por favor, ingrese su nombre sin números ni caracteres especiales.">
+                <input type="text" class="form" id="nombre" name="nombre" required pattern="^[a-zA-ZñÑ ]+$" title="Por favor, ingrese su nombre sin números ni caracteres especiales.">
             </div>
     
             <div class="formm">
                 <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required pattern="^[a-zA-ZñÑ ]+$" title="Por favor, ingrese su apellido sin números ni caracteres especiales.">
+                <input type="text" class="form" id="apellido" name="apellido" required pattern="^[a-zA-ZñÑ ]+$" title="Por favor, ingrese su apellido sin números ni caracteres especiales.">
             </div>
     
             <div class="formm">
                 <label for="telefono">Telefono:</label>
-                <input type="text" id="telefono" name="telefono" required pattern="\d{10}" title="Por favor, ingrese su teléfono arrancando con prefijo 11 y luego los 8 digitos sin espacios ni caracteres especiales.">
+                <input type="text" class="form" id="telefono" name="telefono" required pattern="\d{10}" title="Por favor, ingrese su teléfono arrancando con prefijo 11 y luego los 8 digitos sin espacios ni caracteres especiales.">
             </div>
     
             <div class="formm">
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Por favor, ingrese un correo electrónico válido.">
+                <input type="email" class="form" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Por favor, ingrese un correo electrónico válido.">
             </div>
     
             <div class="puntitos">
-                <input type="checkbox" id="terminos" required>
+                <input type="checkbox" class="form" id="terminos" required>
                 <label for="terminos">Acepto los términos y condiciones</label>
                 <input type="checkbox" id="terminos">
                 <label for="novedades">Quiero recibir las novedades</label>

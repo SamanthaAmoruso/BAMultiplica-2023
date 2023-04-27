@@ -101,11 +101,10 @@ button[type="submit"]:hover {
     justify-content: space-between;
 }
 
-input:invalid {
+input:invalid 
+{
     border: 2px solid red;
 }
-
-
 
 
 /**************************PAGINA RESPONSIVE****************************************************/
