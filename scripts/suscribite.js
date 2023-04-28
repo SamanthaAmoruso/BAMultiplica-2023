@@ -6,7 +6,7 @@ function validarFormulario(event)
   {
     event.preventDefault();
     alert("Formulario enviado correctamente");
-    window.location.href = "../index.html";
+    window.location.href = "./index.html";
   } 
 
 }
@@ -14,5 +14,5 @@ function validarFormulario(event)
 function arrepentirse() 
 {
   alert("Usted volvera a la pagina principal sin haberse suscripto");
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 }
