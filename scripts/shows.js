@@ -72,5 +72,5 @@ contenedor.appendChild(botoncitos);
 
 botonVolver.addEventListener('click', function() 
 {
-    window.location.href = "./index.html";
+    window.location.href = "/index.html";
 });
