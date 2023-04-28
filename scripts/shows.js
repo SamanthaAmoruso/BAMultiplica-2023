@@ -49,7 +49,7 @@ for (let i = 0; i < infoDivs.length; i++)
   orden.classList.add('orden');
 
   const imagen = document.createElement('img');
-  imagen.src = '/images/download.png';
+  imagen.src = '../images/download.png';
   imagen.alt = 'velez';
   imagen.classList.add('contenedorCircular');
 
@@ -72,5 +72,5 @@ contenedor.appendChild(botoncitos);
 
 botonVolver.addEventListener('click', function() 
 {
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
 });
