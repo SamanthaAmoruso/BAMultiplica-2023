@@ -69,8 +69,6 @@ botonVolver.textContent = "volver";
 botoncitos.appendChild(botonVolver);
 contenedor.appendChild(botoncitos);
 
-botonVolver.addEventListener("submit", function(event) 
-{
-    event.preventDefault();
-    window.location.href = "../index.html";
+botonVolver.addEventListener("click", function() {
+  window.location.href = "../index.html";
 });
