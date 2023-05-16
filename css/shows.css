@@ -2,6 +2,7 @@ body{
     background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75));
     max-width: 130vh;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .pClass {
@@ -84,6 +85,7 @@ button[type="submit"]:hover
 }
 
 .botoncitos{
+    margin-top: -82px;
     display: flex;
     justify-content: center;
 }

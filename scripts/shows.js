@@ -60,15 +60,8 @@ for (let i = 0; i < infoDivs.length; i++)
 
 }// fin del for
 
-const botoncitos = document.createElement("div");
-const botonVolver = document.createElement("button");
-botoncitos.classList.add("botoncitos");
-botonVolver.id = "volver";
-botonVolver.type = "submit";
-botonVolver.textContent = "volver";
-botoncitos.appendChild(botonVolver);
-contenedor.appendChild(botoncitos);
-
-botonVolver.addEventListener("click", function() {
-  window.location.href = "/index.html";
+volver.addEventListener('click', function() 
+{
+  alert("Usted volvera a la pagina principal");
+  window.location.href = "../index.html";
 });
