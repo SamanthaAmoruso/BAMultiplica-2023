@@ -47,8 +47,7 @@ label {
 }
 
 input[type="text"],
-input[type="email"],
-input[type="password"],
+input[type="correo"],
 textarea {
     width: 100%;
     padding: 10px;
@@ -100,10 +99,16 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: space-between;
 }
+  
+input[type="text"].error,
+input[type="correo"].error,
+textarea.error {
+    box-shadow: 0 0 10px red;
+}
 
-input:invalid 
+input[type="checkbox"].error 
 {
-    border: 2px solid red;
+    box-shadow: 0 0 10px red;
 }
 
 
